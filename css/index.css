@@ -1,0 +1,254 @@
+body{
+    margin: 0 auto;
+    width: 100%;
+    min-width: 32px;
+    max-width: 640px;
+    background-color: #f6f6f6;
+    font-family: -apple-system,Helvetica,sans-serif;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+*{
+    /* 去除高亮 */
+    -webkit-tap-highlight-color: transparent;
+}
+/* 去除图片顶部的空白缝隙 */
+.goback{
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    width: 38px;
+    height: 38px;
+    background: url(../image/goback.png) no-repeat;
+    background-size: 38px 38px;
+}
+img{
+    vertical-align: top;
+}
+.app{
+    height: 50px;
+    background-color: #232326;
+}
+.app div{
+    float: left;
+    height: 50px;
+    line-height: 50px;
+}
+.app div:nth-child(1){
+    margin-left: 2.5%;
+    width: 16px;
+}
+.app div:nth-child(1) img{
+    vertical-align:middle;
+    width: 16px;
+    height: 16px;
+}
+.app div:nth-child(2){
+    margin-left: 5%;
+    margin-right: 2.5%;
+    width: 35px;
+    
+}
+.app div:nth-child(2) img{
+    vertical-align: middle;
+    width: 35px;
+    height: 35px;
+}
+.app div:nth-child(3){
+    width: 40%;
+}
+.app div:nth-child(3) span{
+    /* position: relative; */
+    text-align: left;
+}
+.app div:nth-child(3) span em{
+    font-style: normal;
+    font-size: 12px;
+}
+.app div:nth-child(3) span em:nth-child(1){
+    width: 100%;
+    position: absolute;
+    top: -8px;
+    /* left: 0; */
+    font-weight: 500;
+    color:#fff;
+}
+.app div:nth-child(3) span em:nth-child(2){
+    position: absolute;
+    top: 10px;
+    font-weight: normal;
+    color:#999;
+}
+.app div:nth-child(4){
+    width: 31.88%;
+    float: right;
+    background-color: #cd2525;
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+}
+/* 搜索 */
+.search-wrap{
+    /* 加了固定定位一定要有宽度 */
+    position: fixed;
+    height: 195px;
+    overflow: hidden;
+    /* background-color: #cd2525; */
+    min-width: 320px;
+    max-width: 640px;
+    width: 100%;
+}
+.search-wrap img{
+    opacity: 1;
+    display: block;
+    margin: 0 auto;
+    width: 364px;
+    height: 100%;
+}
+/* .search-wrap .bg{
+    position: absolute;
+    top: 0;
+    left: -25%;
+    height: 7.25rem;
+    width: 150%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    background-image:linear-gradient(0deg,#f1503b,#c82519 50%);
+} */
+.search-wrap .search-btn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-color: pink; */
+    width: 40px;
+    height: 44px;
+}
+.search-wrap .search-btn span{
+    margin: 14px 0 0 15px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../image/s-btn.png) no-repeat;
+    background-size: 100%;
+}
+.search-wrap .search-login{
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* background-color: pink; */
+    width: 40px;
+    height: 44px;
+}
+.search-wrap .search-login span{
+    display: block;
+    margin: 11px 0;
+    font-size: 14px;
+    color: #fff;
+}
+
+.search{
+    position: relative;
+    margin: 0 50px;
+    margin-top: 7px;
+    height: 30px;
+    background-color:#f7f7f7;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.search .logo{
+    float: left;
+    margin: 8px 0px 0 15px;
+    display: block;
+    width: 26px;
+    height: 15px;
+    background: url(../image/jd.png) no-repeat;
+    background-size: 20px 15px;
+    border-right: 1px solid rgb(223, 221, 221);
+}
+/* 二倍精灵图 */
+.search .magnifier{
+    float: left;
+    position: absolute;
+    margin-left: 48px;
+    margin-top: 9px;
+    display: block;
+    width: 18px;
+    height: 15px;
+    background: url(../image/jd-sprites.png) no-repeat;
+    background-size: 200px;/* 原图的一半 */
+    background-position: -80px 0px;/* 距离的一半 */
+}
+.search input{
+    position: absolute;
+    margin-left: 5px;
+    padding-left: 5px;
+    height: 16px;
+    /* 我们使用了 calc()，让它的宽度为其容器的宽度减 75px。 */
+    /* 注意+和-号两边要有空格 */
+    width: calc(100% - 75px);
+    top: 8px;
+    left: 66px;
+    border: 0;
+    outline-style: none;
+    font-size: 12px;
+    /* vertical-align: center; */
+    line-height: 16px;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+}
+
+.brand{
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+.brand div{
+    float: left;
+    width: 33.33%;
+}
+.mainContent img{
+    width: 100%;
+}
+.brand img{
+    
+    width: 100%;
+}
+
+.nav{
+    width: 100%;
+}
+.nav a{
+    float: left;
+    width: 20%;
+    color: #333;
+    text-align: center;
+    text-decoration: none;
+    /* background-color: pink; */
+}
+.nav a img{
+    width: 2rem;
+    margin-top: 0.5rem;
+}
+.nav a span{
+    display: block;
+    margin-top: 0.3rem;
+    font-size: .6rem;
+    color: #666;
+}
+.kill a{
+    margin-top: 20px;
+    float: left;
+    display: block;
+    box-sizing: border-box;
+}
+.kill a:nth-child(1){
+    width: 50%;
+}
+.kill a:nth-child(n+2){
+    width: 25%;
+    border-left: 1px solid #ccc;
+}
+/* .kill a:nth-child(3){
+    width: 25%;
+} */
